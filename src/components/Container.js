@@ -7,7 +7,7 @@ function Container() {
     return(
         <>
             <Routes>
-                <Route path="/construction-design" element={<Homepage />} />
+                <Route path="/" element={<Homepage />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
             

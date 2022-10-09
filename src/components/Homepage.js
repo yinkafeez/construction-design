@@ -82,7 +82,7 @@ function Homepage() {
                             <Col xs={2}>
                                 <img src={IMG6} alt=""  className="top-side-img" />
                             </Col>
-                            <Col xs={10}>
+                            <Col xs={10} className="top-nav-img-col">
                                 <img src={IMG2} alt=""  className="top-nav-img" />
                             </Col>
                         </Row>
