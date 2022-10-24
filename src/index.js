@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 //stylesheet
 import "./App.css"
+import "./Contact.css"
 
 
 ReactDOM.render(

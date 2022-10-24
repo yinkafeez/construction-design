@@ -11,71 +11,55 @@ import Container from "react-bootstrap/Container"
 function Footer() {
     return(
         <Container className="footer-container">
-        <Row>
-            <Col xs={3}>
-                <h4 className="footer-title"> CONSTRUCTION </h4>
-                <p className="footer-description"> You will find your next home and value with us </p>
-                <Row>
-                    <Col xs="4">
-                        <p className="footer-icon-one"> 
-                            <FiFacebook 
-                                className="icon" 
-                                style={{
-                                    color:"white",
-                                    width:"25px",
-                                    height:"28px",
-                                }} 
-                            /> 
-                        </p>
-                    </Col>
-                    <Col xs="4">
-                        <p className="footer-icon-two">
-                            <FiTwitter 
-                                className="icon" 
-                                style={{
-                                    color:"#FAFBFF",
-                                    width:"25px",
-                                    height:"28px",
-                                }} 
-                            />  
-                        </p>
-                    </Col>
-                    <Col xs="4">
-                        <p className="footer-icon-three"> 
-                            <FiInstagram 
-                                className="icon" 
-                                style={{
-                                    color:"#FAFBFF",
-                                    width:"25px",
-                                    height:"28px",
-                                }} 
-                            /> 
-                        </p>
-                    </Col>
-                </Row>              
-            </Col>
-            <Col xs={3}>
-                <p className="footer-header"> Resources </p>
-                <p className="footer-sub-heading"> Our Agents </p>
-                <p className="footer-sub-heading"> Member Stories </p>
-                <p className="footer-sub-heading"> Value </p>
-                <p className="footer-sub-heading"> Free Trial </p>
-            </Col>
-            <Col xs={3}>
-                <p className="footer-header"> Company </p>
-                <p className="footer-sub-heading"> Partnership </p>
-                <p className="footer-sub-heading"> Term of Use </p>
-                <p className="footer-sub-heading"> Privacy </p>
-                <p className="footer-sub-heading"> Site Map </p>
-            </Col>
-            <Col xs={3}>
-                <p className="footer-header"> Get In Touch </p>
-                <p className="footer-input"> <input placeholder="Enter your mail" /> <BsArrowRight className="footer-input-icon" />  </p>
-            </Col>
-        </Row>
-        <Row className="footer-copyright-row">
-            <p>Copyright Construction.com, All rights reserved</p>
-        </Row>
+            <Row className="footer-row">
+                <Col xs={6} md={3} className="footer-col">
+                    <div className="footer-col-title"> CONSTRUCTION </div>
+                    <div className="footer-col-sub-title"> You will find your next home and value with us </div>
+                    <Row className="footer-col-row">
+                        <Col xs={4}>
+                            <FiFacebook className="footer-col-one-row-icon" />
+                        </Col>
+                        <Col xs={4}>
+                            <FiTwitter className="footer-col-one-row-icon" />
+                        </Col>
+                        <Col xs={4}>
+                            <FiInstagram className="footer-col-one-row-icon" />
+                        </Col>
+                    </Row>
+                </Col>
+
+                <Col xs={6} md={3} className="footer-col">
+                    <p className="footer-title"> Resources </p>
+                    <p className="footer-item"> Our Agents </p>
+                    <p className="footer-item"> Member Stories </p>
+                    <p className="footer-item"> Value </p>
+                    <p className="footer-item"> Free Trial </p>
+                </Col>
+
+                <Col xs={6} md={3} className="footer-col">
+                    <p className="footer-title"> Company </p>
+                    <p className="footer-item"> Partnership </p>
+                    <p className="footer-item"> Term of Use </p>
+                    <p className="footer-item"> Privacy </p>
+                    <p className="footer-item"> Site Map </p>
+                </Col>
+
+                <Col xs={6} md={3} className="footer-col">
+                    <p className="footer-title"> Get In Touch </p>
+                    <div className="footer-input-div">
+                        <input 
+                            type="text"
+                            placeholder="Enter your mail"
+                            className="footer-input"
+                        />
+                        <BsArrowRight className="footer-icon" />
+                    </div>
+                </Col>
+            </Row>
+
+            <div className="footer-copyright-div">
+                Copyright Construction.com, All rights reserved
+            </div>
         </Container>
     )
 }
